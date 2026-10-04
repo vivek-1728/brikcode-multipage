@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Case Studies & Technical Systems | BRIKCODE</title>
+  <meta name="description" content="Explore BRIKCODE engineering case studies. Discover how we design, build, and deploy production AI products, RAG systems, and custom software platforms.">
+  <link rel="canonical" href="https://brikcode.com/case-studies">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta property="og:title" content="Case Studies & Technical Systems | BRIKCODE">
+  <meta property="og:description" content="Explore real engineering architectures and implementation breakdowns across AI development and custom software.">
+  <meta property="og:url" content="https://brikcode.com/case-studies">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BRIKCODE">
+  <meta property="og:image" content="https://brikcode.com/assets/logo.png">
+  <meta property="og:image:width" content="1558">
+  <meta property="og:image:height" content="591">
+  <meta property="og:image:alt" content="BRIKCODE - AI Ready Future">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Case Studies & Technical Systems | BRIKCODE">
+  <meta name="twitter:description" content="Explore real engineering architectures and implementation breakdowns across AI development and custom software.">
+  <meta name="twitter:image" content="https://brikcode.com/assets/logo.png">
+  <link rel="icon" href="/assets/logo-icon.png">
+  <link rel="apple-touch-icon" href="/assets/logo-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#041C34">
+  <link rel="stylesheet" href="/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://brikcode.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Case Studies",
+        "item": "https://brikcode.com/case-studies"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header id="site-header">
+    <div class="wrap nav">
+      <a href="/" aria-label="BRIKCODE home">
+        <img src="/assets/logo.png" alt="BRIKCODE - AI Ready Future" width="156" height="42">
+      </a>
+      <button class="burger" aria-expanded="false" aria-controls="menu" aria-label="Toggle navigation menu">Menu</button>
+      <nav aria-label="Primary Navigation">
+        <ul id="menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="/why-brikcode">Why BRIKCODE</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/case-studies" aria-current="page">Case Studies</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/careers">Careers</a></li>
+          <li><a class="btn" href="/contact">Talk to Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero dark">
+      <div class="wrap">
+        <nav aria-label="Breadcrumb">
+          <ul class="breadcrumbs">
+            <li><a href="/">Home</a></li>
+            <li class="sep">/</li>
+            <li aria-current="page">Case Studies</li>
+          </ul>
+        </nav>
+        <span class="tag">Engineering Architecture</span>
+        <h1>From technical challenge to working production software.</h1>
+        <p class="lead">A detailed examination of how BRIKCODE approaches complex problems: architectural decisions, engineering workflows, and reliable system deployments.</p>
+      </div>
+    </section>
+
+    <!-- Case Study 1 -->
+    <section>
+      <div class="wrap">
+        <span class="chip" style="margin:0 0 12px;background:var(--brand-accent);color:var(--primary-dark)">Case Study 01</span>
+        <h2>Enterprise Document Intelligence & RAG Retrieval Engine</h2>
+        <p class="lead">Processing, indexing, and querying unstructured business records with semantic precision and zero data leakage.</p>
+        
+        <div class="grid g2" style="margin-top:28px">
+          <div class="cell">
+            <h3>The Challenge</h3>
+            <p>Organizations handling high volumes of contracts, technical manuals, and financial reports struggle with manual information extraction. Traditional keyword search misses semantic context, while standard LLM APIs risk data exposure and context window truncation.</p>
+          </div>
+          <div class="cell">
+            <h3>The Solution</h3>
+            <p>We architected a hybrid Retrieval-Augmented Generation (RAG) platform. Documents are securely chunked, embedded using domain-adapted models, stored in isolated vector collections, and surfaced through hybrid dense-sparse reranking.</p>
+          </div>
+        </div>
+
+        <div class="stack" style="max-width:100%;margin-top:24px">
+          <div>Architecture Layer <span>Technical Implementation</span></div>
+          <div>Document Pipeline <span>OCR parsing, semantic text chunking, and metadata tagging</span></div>
+          <div>Embedding & Indexing <span>Custom vector embeddings with high-speed indexing</span></div>
+          <div>Retrieval & Rerank <span>Hybrid BM25 + vector similarity with cross-encoder reranking</span></div>
+          <div>Generation & Guardrails <span>Source-cited LLM synthesis with hallucination mitigation</span></div>
+        </div>
+
+        <div class="row" style="margin-top:24px">
+          <a class="btn ghost" href="/services/ai-development">Explore AI Development Services</a>
+          <a class="btn ghost" href="/services/generative-ai">Explore Generative AI Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Study 2 -->
+    <section class="alt">
+      <div class="wrap">
+        <span class="chip" style="margin:0 0 12px;background:var(--brand-accent);color:var(--primary-dark)">Case Study 02</span>
+        <h2>Autonomous Customer Support & Workflow Orchestrator</h2>
+        <p class="lead">Building a stateful agent system capable of resolving inquiries, querying internal databases, and updating business software.</p>
+        
+        <div class="grid g2" style="margin-top:28px">
+          <div class="cell">
+            <h3>The Challenge</h3>
+            <p>First-tier customer queries often require interacting with multiple disparate systems—checking order databases, verifying account permissions, and triggering inventory updates. Rigid decision-tree chatbots frustrate users and escalate too many tickets.</p>
+          </div>
+          <div class="cell">
+            <h3>The Solution</h3>
+            <p>BRIKCODE designed a deterministic multi-agent workflow. An intent router categorizes queries, dedicated agents execute authenticated API tool calls with strict schema validation, and human-in-the-loop triggers handle edge cases gracefully.</p>
+          </div>
+        </div>
+
+        <div class="stack" style="max-width:100%;margin-top:24px">
+          <div>System Component <span>Implementation Detail</span></div>
+          <div>Intent Classifier <span>Low-latency routing with confidence scoring</span></div>
+          <div>Agent Core <span>Tool execution sandbox with parameterized API connectors</span></div>
+          <div>State Store <span>Session persistence and context-window memory management</span></div>
+          <div>Human Fallback <span>Automatic escalation triggers with conversation context summaries</span></div>
+        </div>
+
+        <div class="row" style="margin-top:24px">
+          <a class="btn ghost" href="/services/ai-agents">Explore AI Agent Development</a>
+          <a class="btn ghost" href="/services/ai-automation">Explore AI Automation</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Study 3 -->
+    <section>
+      <div class="wrap">
+        <span class="chip" style="margin:0 0 12px;background:var(--brand-accent);color:var(--primary-dark)">Case Study 03</span>
+        <h2>High-Performance Multi-Tenant SaaS Architecture</h2>
+        <p class="lead">Building a secure, scalable SaaS backend and responsive web application from technical architecture to launch.</p>
+        
+        <div class="grid g2" style="margin-top:28px">
+          <div class="cell">
+            <h3>The Challenge</h3>
+            <p>Early-stage products frequently accumulate technical debt by coupling user interfaces tightly to ad-hoc database schemas. Scaling requires isolated tenant data, robust permission controls, predictable API latencies, and modern responsive frontends.</p>
+          </div>
+          <div class="cell">
+            <h3>The Solution</h3>
+            <p>We built a clean, modular SaaS architecture: tenant-isolated database layers, performant REST & GraphQL APIs, role-based access control (RBAC), and a responsive web application optimized for Core Web Vitals and zero render-blocking bloat.</p>
+          </div>
+        </div>
+
+        <div class="stack" style="max-width:100%;margin-top:24px">
+          <div>Engineering Discipline <span>Deliverable</span></div>
+          <div>Backend Systems <span>High-throughput API microservices with Redis caching</span></div>
+          <div>Data Isolation <span>Row-level security policies and tenant-partitioned backups</span></div>
+          <div>Frontend Application <span>Sub-second page loads, accessible UI tokens, mobile responsiveness</span></div>
+          <div>DevOps & CI/CD <span>Automated testing pipelines, containerized deployments, health monitoring</span></div>
+        </div>
+
+        <div class="row" style="margin-top:24px">
+          <a class="btn ghost" href="/services/software-development">Explore Custom Software</a>
+          <a class="btn ghost" href="/services/web-development">Explore Web Development</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="dark">
+      <div class="wrap">
+        <h2>Have a similar engineering challenge?</h2>
+        <p class="lead">Let's discuss your technical requirements and define the right architecture for your business.</p>
+        <div class="row">
+          <a class="btn" href="/contact">Discuss Your Project</a>
+          <a class="btn ghost" href="/why-brikcode">Why Choose BRIKCODE</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer">
+    <div class="wrap">
+      <div class="cols">
+        <div>
+          <span class="lg">
+            <img src="/assets/logo.png" alt="BRIKCODE" width="133" height="36" loading="lazy">
+          </span>
+          <p style="margin-top:14px">AI products, custom software and intelligent systems built for what's next.</p>
+          <p style="margin-top:8px;font-size:0.85rem;color:var(--muted-text)">Hyderabad, India · <a href="mailto:brikcode07@gmail.com" style="color:var(--brand-accent)">brikcode07@gmail.com</a></p>
+        </div>
+        <div>
+          <h3>Company</h3>
+          <ul>
+            <li><a href="/about">About</a></li>
+            <li><a href="/why-brikcode">Why BRIKCODE</a></li>
+            <li><a href="/case-studies">Case Studies</a></li>
+            <li><a href="/careers">Careers</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>AI Services</h3>
+          <ul>
+            <li><a href="/services/ai-development">AI Development</a></li>
+            <li><a href="/services/generative-ai">Generative AI</a></li>
+            <li><a href="/services/ai-agents">AI Agents</a></li>
+            <li><a href="/services/ai-automation">AI Automation</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Software Engineering</h3>
+          <ul>
+            <li><a href="/services/software-development">Custom Software</a></li>
+            <li><a href="/services/web-development">Web Development</a></li>
+            <li><a href="/services/mobile-app-development">Mobile App Dev</a></li>
+            <li><a href="/services">All Services</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Trust & Legal</h3>
+          <ul>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/terms-of-service">Terms of Service</a></li>
+            <li><a href="/contact">Get in Touch</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="bt">&copy; 2026 BRIKCODE. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="/js/script.js" defer></script>
+</body>
+</html>

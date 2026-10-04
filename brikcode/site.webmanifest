@@ -1,0 +1,17 @@
+{
+  "name": "BRIKCODE",
+  "short_name": "BRIKCODE",
+  "description": "AI & Technology Solutions for Modern Businesses",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#041C34",
+  "theme_color": "#041C34",
+  "icons": [
+    {
+      "src": "/assets/logo-icon.png",
+      "sizes": "560x560",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
