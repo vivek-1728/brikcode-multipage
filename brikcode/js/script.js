@@ -10,7 +10,6 @@ if(f)f.innerHTML='<div class="wrap"><div class="cols"><div><span class="lg"><img
 +col("Company",[["About","about.html"],["Why BRIKCODE","why-brikcode.html"],["Careers","careers.html"],["Contact","contact.html"]])
 +col("Services",[["AI Products","services.html"],["SaaS Development","services.html"],["Custom Software","services.html"],["AI APIs","services.html"],["Automation","services.html"],["AI Infrastructure","services.html"]])
 +col("Technology",[["Generative AI","services.html"],["Machine Learning","services.html"],["AI Agents","services.html"],["Data","services.html"],["Cloud","services.html"],["Security","services.html"]])
-+col("Connect",[["LinkedIn [LinkedIn URL]"],["GitHub [GitHub URL]"],["Email","mailto:brikcode07@gmail.com"]])
 +'</div><p class="bt">© 2026 BRIKCODE. All rights reserved.</p></div>';
 var b=document.querySelector(".burger");
 if(b)b.onclick=function(){var m=document.getElementById("menu");var o=m.classList.toggle("open");b.setAttribute("aria-expanded",o)};
