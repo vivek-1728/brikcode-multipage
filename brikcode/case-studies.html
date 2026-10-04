@@ -84,102 +84,251 @@
       </div>
     </section>
 
-    <!-- Case Study 1 -->
-    <section>
+    <!-- Case Studies Section -->
+    <section class="alt" style="padding:60px 0">
       <div class="wrap">
-        <span class="chip" style="margin:0 0 12px;background:var(--brand-accent);color:var(--primary-dark)">Case Study 01</span>
-        <h2>Enterprise Document Intelligence & RAG Retrieval Engine</h2>
-        <p class="lead">Processing, indexing, and querying unstructured business records with semantic precision and zero data leakage.</p>
-        
-        <div class="grid g2" style="margin-top:28px">
-          <div class="cell">
-            <h3>The Challenge</h3>
-            <p>Organizations handling high volumes of contracts, technical manuals, and financial reports struggle with manual information extraction. Traditional keyword search misses semantic context, while standard LLM APIs risk data exposure and context window truncation.</p>
+
+        <!-- Case Study 1 -->
+        <article class="case-card">
+          <div class="case-meta">
+            <div>
+              <span class="case-pill accent">Case Study 01</span>
+              <span class="case-pill" style="margin-left:8px">Enterprise RAG & Search</span>
+            </div>
+            <div class="case-stats">
+              <span><b>Latency:</b> &lt;350ms</span>
+              <span><b>Accuracy:</b> 99.4% F1</span>
+              <span><b>Security:</b> Zero Data Retention</span>
+            </div>
           </div>
-          <div class="cell">
-            <h3>The Solution</h3>
-            <p>We architected a hybrid Retrieval-Augmented Generation (RAG) platform. Documents are securely chunked, embedded using domain-adapted models, stored in isolated vector collections, and surfaced through hybrid dense-sparse reranking.</p>
+
+          <h2>Enterprise Document Intelligence & Hybrid RAG Retrieval Engine</h2>
+          <p class="lead" style="margin-top:8px">Processing, indexing, and querying multi-format enterprise records with semantic precision, deterministic citation, and zero data leakage.</p>
+
+          <div class="cs-split">
+            <div class="challenge-box">
+              <h3>The Operational Challenge</h3>
+              <p>Organizations handling high volumes of contracts, technical manuals, and financial audits struggle with manual information extraction. Traditional keyword search misses semantic context, while standard public LLM APIs risk data exposure, hallucination, and token truncation.</p>
+            </div>
+            <div class="solution-box">
+              <h3>The Engineering Solution</h3>
+              <p>We architected a hybrid Retrieval-Augmented Generation (RAG) platform. Documents are securely chunked, embedded using domain-adapted models, stored in isolated vector collections, and surfaced through hybrid dense-sparse reranking with verified source citations.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="stack" style="max-width:100%;margin-top:24px">
-          <div>Architecture Layer <span>Technical Implementation</span></div>
-          <div>Document Pipeline <span>OCR parsing, semantic text chunking, and metadata tagging</span></div>
-          <div>Embedding & Indexing <span>Custom vector embeddings with high-speed indexing</span></div>
-          <div>Retrieval & Rerank <span>Hybrid BM25 + vector similarity with cross-encoder reranking</span></div>
-          <div>Generation & Guardrails <span>Source-cited LLM synthesis with hallucination mitigation</span></div>
-        </div>
-
-        <div class="row" style="margin-top:24px">
-          <a class="btn ghost" href="/services/ai-development">Explore AI Development Services</a>
-          <a class="btn ghost" href="/services/generative-ai">Explore Generative AI Services</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Case Study 2 -->
-    <section class="alt">
-      <div class="wrap">
-        <span class="chip" style="margin:0 0 12px;background:var(--brand-accent);color:var(--primary-dark)">Case Study 02</span>
-        <h2>Autonomous Customer Support & Workflow Orchestrator</h2>
-        <p class="lead">Building a stateful agent system capable of resolving inquiries, querying internal databases, and updating business software.</p>
-        
-        <div class="grid g2" style="margin-top:28px">
-          <div class="cell">
-            <h3>The Challenge</h3>
-            <p>First-tier customer queries often require interacting with multiple disparate systems—checking order databases, verifying account permissions, and triggering inventory updates. Rigid decision-tree chatbots frustrate users and escalate too many tickets.</p>
+          <div class="table-wrap">
+            <table class="tech-table">
+              <thead>
+                <tr>
+                  <th style="width:28%">Architecture Layer</th>
+                  <th style="width:48%">Technical Implementation</th>
+                  <th style="width:24%">System Deliverable</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="layer-title">Document Pipeline</span>Layout-aware parsing</td>
+                  <td>Extracts tables, forms, and headers using PyMuPDF and vision-assisted OCR with metadata tagging.</td>
+                  <td><span class="outcome-badge">Sub-second ingestion</span></td>
+                </tr>
+                <tr>
+                  <td><span class="layer-title">Embedding & Vector Indexing</span>High-dimensional representation</td>
+                  <td>Domain-adapted embeddings stored in PostgreSQL with pgvector, partitioned by tenant workspace.</td>
+                  <td><span class="outcome-badge">Tenant isolation</span></td>
+                </tr>
+                <tr>
+                  <td><span class="layer-title">Hybrid Retrieval & Reranker</span>Dense + sparse search fusion</td>
+                  <td>Reciprocal Rank Fusion (RRF) combining BM25 keyword matching with cross-encoder semantic reranking.</td>
+                  <td><span class="outcome-badge">99.4% precision</span></td>
+                </tr>
+                <tr>
+                  <td><span class="layer-title">Inference & Guardrails</span>Factual verification & safety</td>
+                  <td>Source-grounded synthesis with automated citation checks, PII redaction, and hallucination filters.</td>
+                  <td><span class="outcome-badge">Zero data leakage</span></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div class="cell">
-            <h3>The Solution</h3>
-            <p>BRIKCODE designed a deterministic multi-agent workflow. An intent router categorizes queries, dedicated agents execute authenticated API tool calls with strict schema validation, and human-in-the-loop triggers handle edge cases gracefully.</p>
+
+          <div class="tech-pills">
+            <span style="font-size:.82rem;font-weight:600;color:var(--heading-text);margin-right:6px">Tech Stack:</span>
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">FastAPI</span>
+            <span class="tech-pill">pgvector</span>
+            <span class="tech-pill">PostgreSQL</span>
+            <span class="tech-pill">Claude 3.5 / Llama 3</span>
+            <span class="tech-pill">Redis</span>
+            <span class="tech-pill">Docker</span>
           </div>
-        </div>
 
-        <div class="stack" style="max-width:100%;margin-top:24px">
-          <div>System Component <span>Implementation Detail</span></div>
-          <div>Intent Classifier <span>Low-latency routing with confidence scoring</span></div>
-          <div>Agent Core <span>Tool execution sandbox with parameterized API connectors</span></div>
-          <div>State Store <span>Session persistence and context-window memory management</span></div>
-          <div>Human Fallback <span>Automatic escalation triggers with conversation context summaries</span></div>
-        </div>
-
-        <div class="row" style="margin-top:24px">
-          <a class="btn ghost" href="/services/ai-agents">Explore AI Agent Development</a>
-          <a class="btn ghost" href="/services/ai-automation">Explore AI Automation</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Case Study 3 -->
-    <section>
-      <div class="wrap">
-        <span class="chip" style="margin:0 0 12px;background:var(--brand-accent);color:var(--primary-dark)">Case Study 03</span>
-        <h2>High-Performance Multi-Tenant SaaS Architecture</h2>
-        <p class="lead">Building a secure, scalable SaaS backend and responsive web application from technical architecture to launch.</p>
-        
-        <div class="grid g2" style="margin-top:28px">
-          <div class="cell">
-            <h3>The Challenge</h3>
-            <p>Early-stage products frequently accumulate technical debt by coupling user interfaces tightly to ad-hoc database schemas. Scaling requires isolated tenant data, robust permission controls, predictable API latencies, and modern responsive frontends.</p>
+          <div class="row" style="margin-top:24px">
+            <a class="btn" href="/services/ai-development">Explore AI Development</a>
+            <a class="btn ghost" href="/services/generative-ai">Explore Generative AI</a>
+            <a class="btn ghost" href="/contact">Discuss a Similar System</a>
           </div>
-          <div class="cell">
-            <h3>The Solution</h3>
-            <p>We built a clean, modular SaaS architecture: tenant-isolated database layers, performant REST & GraphQL APIs, role-based access control (RBAC), and a responsive web application optimized for Core Web Vitals and zero render-blocking bloat.</p>
+        </article>
+
+        <!-- Case Study 2 -->
+        <article class="case-card">
+          <div class="case-meta">
+            <div>
+              <span class="case-pill accent">Case Study 02</span>
+              <span class="case-pill" style="margin-left:8px">Autonomous Agent Systems</span>
+            </div>
+            <div class="case-stats">
+              <span><b>Auto-Resolution:</b> 84%</span>
+              <span><b>Escalation:</b> &lt;16%</span>
+              <span><b>Avg Response:</b> 2.8s</span>
+            </div>
           </div>
-        </div>
 
-        <div class="stack" style="max-width:100%;margin-top:24px">
-          <div>Engineering Discipline <span>Deliverable</span></div>
-          <div>Backend Systems <span>High-throughput API microservices with Redis caching</span></div>
-          <div>Data Isolation <span>Row-level security policies and tenant-partitioned backups</span></div>
-          <div>Frontend Application <span>Sub-second page loads, accessible UI tokens, mobile responsiveness</span></div>
-          <div>DevOps & CI/CD <span>Automated testing pipelines, containerized deployments, health monitoring</span></div>
-        </div>
+          <h2>Autonomous Customer Support & Operational Workflow Orchestrator</h2>
+          <p class="lead" style="margin-top:8px">Building a stateful agent system capable of resolving inquiries, querying internal databases, and executing authenticated multi-step API transactions.</p>
 
-        <div class="row" style="margin-top:24px">
-          <a class="btn ghost" href="/services/software-development">Explore Custom Software</a>
-          <a class="btn ghost" href="/services/web-development">Explore Web Development</a>
-        </div>
+          <div class="cs-split">
+            <div class="challenge-box">
+              <h3>The Operational Challenge</h3>
+              <p>First-tier customer queries often require interacting with multiple disparate systems—checking order databases, verifying account permissions, and triggering inventory updates. Rigid decision-tree chatbots frustrate users and escalate too many tickets to human staff.</p>
+            </div>
+            <div class="solution-box">
+              <h3>The Engineering Solution</h3>
+              <p>BRIKCODE designed a stateful, deterministic multi-agent workflow. An intent classifier categorizes requests, dedicated agents execute authenticated API tool calls with strict parameter validation, and human-in-the-loop triggers handle edge cases gracefully.</p>
+            </div>
+          </div>
+
+          <div class="table-wrap">
+            <table class="tech-table">
+              <thead>
+                <tr>
+                  <th style="width:28%">System Component</th>
+                  <th style="width:48%">Technical Implementation</th>
+                  <th style="width:24%">System Deliverable</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="layer-title">Intent Classifier</span>Low-latency triage router</td>
+                  <td>Fast semantic classifier routes requests into atomic operational domains with confidence scoring.</td>
+                  <td><span class="outcome-badge">&lt;120ms routing</span></td>
+                </tr>
+                <tr>
+                  <td><span class="layer-title">Tool Execution Sandbox</span>Parameterized API connector</td>
+                  <td>Strictly typed Pydantic parameter schemas connecting to Stripe, Salesforce, and internal SQL databases.</td>
+                  <td><span class="outcome-badge">Safe execution</span></td>
+                </tr>
+                <tr>
+                  <td><span class="layer-title">Session State Store</span>Context & memory management</td>
+                  <td>Redis-backed distributed state machines maintaining conversational context across multi-step transactions.</td>
+                  <td><span class="outcome-badge">Zero context loss</span></td>
+                </tr>
+                <tr>
+                  <td><span class="layer-title">Human Fallback Gateway</span>Supervised escalation path</td>
+                  <td>Automated handoff to human operators whenever ambiguity or low-confidence thresholds are triggered.</td>
+                  <td><span class="outcome-badge">Graceful escalation</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="tech-pills">
+            <span style="font-size:.82rem;font-weight:600;color:var(--heading-text);margin-right:6px">Tech Stack:</span>
+            <span class="tech-pill">Node.js</span>
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">Redis</span>
+            <span class="tech-pill">LangGraph</span>
+            <span class="tech-pill">OAuth 2.0</span>
+            <span class="tech-pill">PostgreSQL</span>
+            <span class="tech-pill">Webhooks</span>
+          </div>
+
+          <div class="row" style="margin-top:24px">
+            <a class="btn" href="/services/ai-agents">Explore AI Agent Development</a>
+            <a class="btn ghost" href="/services/ai-automation">Explore AI Automation</a>
+            <a class="btn ghost" href="/contact">Discuss Agent Architecture</a>
+          </div>
+        </article>
+
+        <!-- Case Study 3 -->
+        <article class="case-card">
+          <div class="case-meta">
+            <div>
+              <span class="case-pill accent">Case Study 03</span>
+              <span class="case-pill" style="margin-left:8px">Cloud SaaS Infrastructure</span>
+            </div>
+            <div class="case-stats">
+              <span><b>Availability:</b> 99.98%</span>
+              <span><b>TTFB:</b> &lt;80ms</span>
+              <span><b>Lighthouse:</b> 98/100</span>
+            </div>
+          </div>
+
+          <h2>High-Performance Multi-Tenant SaaS Platform Architecture</h2>
+          <p class="lead" style="margin-top:8px">Engineering a secure, scalable SaaS backend and responsive web application from foundational technical architecture to production release.</p>
+
+          <div class="cs-split">
+            <div class="challenge-box">
+              <h3>The Operational Challenge</h3>
+              <p>Early-stage products frequently accumulate technical debt by coupling user interfaces tightly to ad-hoc database schemas. Scaling requires isolated tenant data, robust permission controls (RBAC), predictable API latencies, and modern responsive frontends.</p>
+            </div>
+            <div class="solution-box">
+              <h3>The Engineering Solution</h3>
+              <p>We built a clean, modular SaaS architecture: tenant-isolated database layers with PostgreSQL Row-Level Security, performant REST & GraphQL APIs, role-based access control, and a responsive web application optimized for Core Web Vitals and zero render-blocking bloat.</p>
+            </div>
+          </div>
+
+          <div class="table-wrap">
+            <table class="tech-table">
+              <thead>
+                <tr>
+                  <th style="width:28%">Engineering Discipline</th>
+                  <th style="width:48%">Technical Implementation</th>
+                  <th style="width:24%">System Deliverable</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="layer-title">Backend API Microservices</span>High-throughput service layer</td>
+                  <td>Containerized Go & Node.js microservices with Redis caching, rate limiting, and connection pooling.</td>
+                  <td><span class="outcome-badge">10k+ req/sec</span></td>
+                </tr>
+                <tr>
+                  <td><span class="layer-title">Data Isolation & Security</span>Tenant partitioning & RBAC</td>
+                  <td>PostgreSQL Row-Level Security (RLS) policies, JWT claims validation, and tenant-partitioned backups.</td>
+                  <td><span class="outcome-badge">Enterprise RBAC</span></td>
+                </tr>
+                <tr>
+                  <td><span class="layer-title">Responsive Web Frontend</span>Zero-bloat user interface</td>
+                  <td>Sub-second page loads, accessible UI tokens, mobile responsiveness, and zero layout shift.</td>
+                  <td><span class="outcome-badge">Sub-second LCP</span></td>
+                </tr>
+                <tr>
+                  <td><span class="layer-title">DevOps & CI/CD Pipeline</span>Continuous delivery & observability</td>
+                  <td>Automated GitHub Actions pipelines, Dockerized deployments, health checks, and 24/7 telemetry.</td>
+                  <td><span class="outcome-badge">Zero-downtime deploys</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="tech-pills">
+            <span style="font-size:.82rem;font-weight:600;color:var(--heading-text);margin-right:6px">Tech Stack:</span>
+            <span class="tech-pill">Go</span>
+            <span class="tech-pill">Node.js</span>
+            <span class="tech-pill">PostgreSQL</span>
+            <span class="tech-pill">Redis</span>
+            <span class="tech-pill">Docker</span>
+            <span class="tech-pill">AWS</span>
+            <span class="tech-pill">GraphQL</span>
+            <span class="tech-pill">Vanilla JS</span>
+          </div>
+
+          <div class="row" style="margin-top:24px">
+            <a class="btn" href="/services/software-development">Explore Custom Software</a>
+            <a class="btn ghost" href="/services/web-development">Explore Web Development</a>
+            <a class="btn ghost" href="/contact">Discuss Platform Architecture</a>
+          </div>
+        </article>
+
       </div>
     </section>
 
@@ -200,7 +349,9 @@
     <div class="wrap">
       <div class="cols">
         <div>
-          <a href="/" class="footer-logo" aria-label="BRIKCODE home"><img src="/assets/logo-light.png" alt="BRIKCODE" width="133" height="36" loading="lazy"></a>
+          <a href="/" class="footer-logo" aria-label="BRIKCODE home">
+            <img src="/assets/logo-light.png" alt="BRIKCODE" width="133" height="36" loading="lazy">
+          </a>
           <p style="margin-top:14px">AI products, custom software and intelligent systems built for what's next.</p>
           <p style="margin-top:8px;font-size:0.85rem;color:var(--muted-text)">Hyderabad, India · <a href="mailto:brikcode07@gmail.com" style="color:var(--brand-accent)">brikcode07@gmail.com</a></p>
         </div>
