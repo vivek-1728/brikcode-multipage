@@ -95,3 +95,4 @@ footer .bt{border-top:1px solid #1f3d5a;margin-top:36px;padding-top:18px}
 .tech-table .outcome-badge{display:inline-block;padding:3px 10px;border-radius:4px;font-size:.78rem;font-weight:600;background:#EAF6EC;color:#1B7A32;white-space:nowrap}
 .tech-pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;align-items:center}
 .tech-pill{font-size:.78rem;font-weight:500;padding:4px 10px;border-radius:4px;background:var(--surface);color:var(--muted-text);border:1px solid var(--border)}
+.link-block{text-decoration:none;color:inherit}.link-block:hover{color:var(--brand-accent)}
